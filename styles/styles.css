@@ -1,0 +1,54 @@
+html {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #6ea1c4;
+  margin: 0;
+}
+h1 {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  background-color: #d85e5e;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: #2b3a57;
+  margin: 0;
+}
+
+main {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+nav {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin: 20px;
+  border-radius: 10px;
+  justify-self: flex-start;
+}
