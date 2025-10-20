@@ -5,6 +5,11 @@ html {
   background-color: #6ea1c4;
   margin: 0;
 }
+
+button {
+  cursor: pointer;
+}
+
 h1 {
   font-family: "BBH Sans Bogle", sans-serif;
   font-weight: 400;
@@ -22,11 +27,7 @@ body {
   margin: 0;
 }
 
-header {
-  display: flex;
-  background-color: #2b3a57;
-  margin: 0;
-}
+
 
 main {
   width: 600px;
@@ -66,8 +67,34 @@ nav a{
   color:aliceblue;
 }
 
+header {
+  display: flex;
+  background-color: #2b3a57;
+  margin: 0;
+  justify-content: space-between;
+}
+
 .logo {
   margin: 20px;
   border-radius: 10px;
   justify-self: flex-start;
+}
+
+.donate-btn {
+  background-color: #d85e5e;
+  width: 100px;
+  padding:10px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-left:auto;
+}
+
+#socials ul{
+  list-style-type: none;
+  display:flex;
+}
+
+#socials li{
+  padding:10px;
+  
 }
