@@ -45,26 +45,11 @@ iconArray.forEach((icon) => {
   socialSVG.setAttribute("alt", `${icon.alt}`);
   socialLink.setAttribute("target", "_blank");
   socialLink.setAttribute("rel", "noopener noreferrer");
+  socialSVG.className="social-link";
 
   socialLI.appendChild(socialLink);
   socialUL.appendChild(socialLI);
 });
-
-//SEARCH BAR
-
-const search = document.getElementById("search");
-
-const searchForm = document.createElement("form");
-searchForm.className = "search-form";
-searchForm.setAttribute("action", "/search");
-searchForm.setAttribute("method", "GET");
-const input = document.createElement("input");
-input.setAttribute("type","text");
-input.setAttribute("name", "q");
-input.setAttribute("placeholde", "Search...");
-
-search.appendChild(searchForm);
-searchForm.appendChild(input);
 
 //DONATE BUTTON
 
@@ -79,3 +64,55 @@ donateBtn.setAttribute(
   "onclick",
   "window.open('https://secure.actblue.com/donate/indivisiblecc1335522274','_blank');"
 );
+
+//SEARCH BAR
+
+const search = document.getElementById("search");
+
+const searchForm = document.createElement("form");
+searchForm.className = "search-form";
+searchForm.setAttribute("action", "/search");
+searchForm.setAttribute("method", "GET");
+const input = document.createElement("input");
+input.setAttribute("type","text");
+input.setAttribute("name", "q");
+input.setAttribute("placeholder", "Search...");
+input.className="search-bar";
+
+const searchIcon = document.createElement("img");
+searchIcon.src = "images/search-icon.svg";
+searchIcon.alt = "Search";
+searchIcon.className = "search-icon";
+
+
+search.appendChild(searchForm);
+searchForm.appendChild(input);
+searchForm.appendChild(searchIcon);
+
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const query = input.value.trim();
+  if (query) {
+    // Redirect to search results page
+    globalThis.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+  }
+});
+
+searchIcon.addEventListener("click", () => {
+  searchForm.requestSubmit(); 
+});
+
+    const params = new URLSearchParams(globalThis.location.search);
+    const query = params.get("q");
+
+    const resultsDiv = document.getElementById("results");
+
+    if (!query) {
+      resultsDiv.textContent = "Please enter a search term.";
+    } else {
+      resultsDiv.textContent = `Search results for: "${query}"`;
+
+      // TODO: Add logic to show real results here
+    }
+
+

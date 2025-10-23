@@ -27,8 +27,6 @@ body {
   margin: 0;
 }
 
-
-
 main {
   width: 600px;
   margin: 0 auto;
@@ -45,26 +43,24 @@ nav {
   height: 50px;
   padding: 0 20px;
   box-sizing: border-box;
- 
 }
 
 nav ul {
-  display:flex;
+  display: flex;
   flex: 1;
   margin: 0;
   padding: 0;
-
 }
 
-nav li{
+nav li {
   list-style-type: none;
   flex: 1;
   text-align: center;
 }
 
-nav a{
+nav a {
   text-decoration: none;
-  color:aliceblue;
+  color: aliceblue;
 }
 
 header {
@@ -81,20 +77,51 @@ header {
 }
 
 .donate-btn {
-  background-color: #d85e5e;
-  width: 100px;
-  padding:10px;
-  margin: 10px;
-  border-radius: 10px;
-  margin-left:auto;
+  background-color: #db3838;
+  color: white;
+  font-size: 40px;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin-left: auto;
 }
 
-#socials ul{
+.header-stuff {
+  display: flex;
+  align-items: center;
+  gap:30px;
+}
+
+.search-form {
+  position: relative;
+  width: 300px;
+  margin-right:30px;
+}
+
+.search-bar {
+  width: 100%;
+  padding:8px 10px 8px 10px;
+  border-radius: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#socials ul {
   list-style-type: none;
-  display:flex;
+  display: flex;
 }
 
-#socials li{
-  padding:10px;
-  
+#socials li {
+  padding: 5px;
+}
+.social-link {
+  width: 25px;
 }
