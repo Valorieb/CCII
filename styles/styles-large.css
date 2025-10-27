@@ -9,11 +9,23 @@
   box-sizing: border-box;
 }
 
-nav ul {
+    ul.menuLinks.open {
+        display: flex !important;
+        background-color: transparent;
+    }
+
+ul.menuLinks {
   display: flex;
   flex: 1;
   margin: 0;
   padding: 0;
+  opacity:1;
+  transform:none;
+  background: none;
+  box-shadow:none;
+  width: auto;
+  position: static;
+  flex-direction:row;
 }
 
 nav li {
@@ -42,8 +54,7 @@ header {
 }
 
 .donate-btn {
-  background-color: #db3838;
-  color: white;
+
   font-size: 40px;
   width: 200px;
   height: 100px;

@@ -80,17 +80,29 @@ renderIcons(smlSocialUL);
 
 //DONATE BUTTON
 
-const donate = document.getElementById("donate-button");
-const donateBtn = document.createElement("button");
-donateBtn.className = "donate-btn";
-donateBtn.textContent = "Donate";
+const donate = document.getElementById("big-donate-button");
+const donateSml = document.getElementById("small-donate");
 
-donate.appendChild(donateBtn);
+function renderDonateBtn(button) {
+  const donateBtn = document.createElement("button");
+  console.log(button);
+  donateBtn.setAttribute("class", "donate-btn");
 
-donateBtn.setAttribute(
-  "onclick",
-  "window.open('https://secure.actblue.com/donate/indivisiblecc1335522274','_blank');"
-);
+  donateBtn.textContent = "Donate";
+
+  button.appendChild(donateBtn);
+
+  donateBtn.setAttribute(
+    "onclick",
+    "window.open('https://secure.actblue.com/donate/indivisiblecc1335522274','_blank');"
+  );
+}
+
+renderDonateBtn(donate);
+renderDonateBtn(donateSml);
+
+
+
 
 //SEARCH BAR
 

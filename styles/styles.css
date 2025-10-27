@@ -45,21 +45,75 @@ nav {
   box-sizing: border-box;
 }
 
+nav li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
 nav ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+ul.menuLinks {
   display: none;
+  position: fixed;
+  left: 0;
+  top: 120px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+ul.menuLinks.open {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  list-style-type: none;
+  width: 150px;
+  padding: 10px;
+  opacity: 1;
+  transform: translateY(0);
+  transform: translateX(0);
+}
+
+ul.menuLinks li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+ul.menuLinks li:hover {
+  background-color: #f0f0f0;
 }
 
 #myButton {
   display: block;
-  background-color: rgb(14, 189, 99);
+  background-color: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+#myButton::before {
+  content: "\2630";
+  color: #2b3a57;
+}
+
+#myButton.open::before {
+  content: "\2715";
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: flex;
   background-color: #2b3a57;
   margin: 0;
   justify-content: space-between;
@@ -67,8 +121,6 @@ header {
 
 #logo {
   justify-self: flex-start;
-  grid-column: 1/2;
-  grid-row: 2;
   align-self: center;
   margin: 0;
 }
@@ -76,18 +128,22 @@ header {
 .logo {
   margin: 5px;
   border-radius: 5px;
-  height: 30px;
+  height: 25px;
+}
+
+.donate-btn {
+  background-color: #db3838;
+  color: white;
+  font-size: 20px;
+  width: 85px;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
 }
 
 #small-donate {
-  background-color: #db3838;
   grid-row: 2;
   grid-column: 2/3;
-  color: white;
-  font-size: 20px;
-  width: 100px;
-  height: 30px;
-  padding: 10px;
   margin-left: auto;
 }
 
@@ -118,8 +174,7 @@ header {
 }
 
 #small-socials {
-  grid-column: 1/3;
-  justify-self: center;
+  margin-left: auto;
 }
 
 #small-socials ul {
@@ -127,6 +182,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  justify-self: center;
 }
 
 #small-socials li {
