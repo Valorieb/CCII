@@ -85,7 +85,6 @@ const donateSml = document.getElementById("small-donate");
 
 function renderDonateBtn(button) {
   const donateBtn = document.createElement("button");
-  console.log(button);
   donateBtn.setAttribute("class", "donate-btn");
 
   donateBtn.textContent = "Donate";

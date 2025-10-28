@@ -1,4 +1,4 @@
-@media (min-width: 619px) {
+@media (min-width: 679px) {
     nav {
   background-color: black;
   color: aliceblue;
@@ -26,12 +26,18 @@ ul.menuLinks {
   width: auto;
   position: static;
   flex-direction:row;
+  justify-items: center;
 }
 
+ul.menuLinks li:hover {
+  background-color: #262626;
+  border-radius: 10px;
+}
 nav li {
   list-style-type: none;
   flex: 1;
   text-align: center;
+  justify-self: center;
 }
 
 nav a {
@@ -44,6 +50,40 @@ header {
   background-color: #2b3a57;
   margin: 0;
   justify-content: space-between;
+}
+
+.hero-container {
+  /* display:flex;
+  justify-content:center;
+  align-items:center; */
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  /* max-width: 1300px; */
+  object-fit:cover;
+  /* object-position: center; */
+  height:auto;
+  display: block;
+  /* margin: 0 auto; */
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+   width: 240px;
+  aspect-ratio: 1 / 1; 
 }
 
 .logo {
@@ -113,4 +153,23 @@ header {
     #myButton {
         display: none;
     }
+
+    .active {
+ 
+  background-color: #1a1d25;
 }
+
+.active:hover {
+  box-shadow: 0 0 12px rgba(110, 161, 196, 0.7); 
+  transform: scale(1.05);
+}
+
+ul a{
+  color:#ffffff
+}
+
+ul a:visited{
+  color:#ffffff
+}
+}
+

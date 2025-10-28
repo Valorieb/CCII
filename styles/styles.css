@@ -2,7 +2,9 @@ html {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #6ea1c4;
+  background: radial-gradient(circle, #6ea1c4, #1a1d25);
+   overflow-x: hidden;
+ 
   margin: 0;
 }
 
@@ -25,14 +27,15 @@ footer {
 body {
   text-align: center;
   margin: 0;
+  padding: 0;
 }
 
 main {
-  max-width: 600px;
+  max-width: 1300px;
   margin: 0 auto;
   text-align: center;
-  background-color: aliceblue;
-  padding: 20px;
+ background-color: aliceblue;
+  /* padding: 20px; */
 }
 
 nav {
@@ -82,16 +85,27 @@ ul.menuLinks.open {
   opacity: 1;
   transform: translateY(0);
   transform: translateX(0);
+  
 }
+ul a{
+  color:#000000
+}
+
+ul a:visited{
+  color:#000000
+}
+
 
 ul.menuLinks li {
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 4px;
+ color:#000000
 }
 
 ul.menuLinks li:hover {
   background-color: #f0f0f0;
+    
 }
 
 #myButton {
@@ -190,4 +204,16 @@ header {
 }
 .social-link {
   width: 25px;
+}
+
+.active {
+  border:#6ea1c4 solid 2px;
+  background-color: #c4cadb;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(110, 161, 196, 0.5);
+}
+
+.active:hover {
+  box-shadow: 0 0 12px rgba(110, 161, 196, 0.7); 
+  transform: scale(1.05);
 }
