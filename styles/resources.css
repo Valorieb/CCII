@@ -1,0 +1,17 @@
+main {
+  padding: 10px;
+  background-color: transparent;
+  color:aliceblue;
+}
+
+ul a{
+    color:rgb(227, 227, 75);
+}
+
+li a:visited{
+    color:aqua
+}
+
+ul {
+    list-style-type: none;
+}

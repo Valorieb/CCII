@@ -35,35 +35,48 @@
 
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/styles-large.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
 
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/header.js" defer></script>
   </head>
   <body>
-   <header id="header">
-      
+    <header id="header">
       <span id="logo"></span>
       <span id="small-socials"></span>
-      <span id="small-donate" ></span>
+      <span id="small-donate"></span>
       <div class="header-stuff">
         <span id="socials"></span>
         <!-- <span id="search"></span> -->
         <div id="big-donate-button"></div>
-       </div>
+      </div>
     </header>
-    <nav id = "navbar">
-    </nav>
+    <nav id="navbar"></nav>
     <div class="hamnav"></div>
-   
+
     <main>
-        <div class="heading1">
-            <h1>Contact Us</h1>
-        </div>
-      
-      <!-- <img src="images/ccii-logo.webp" alt="CCII square logo" width="100px"> -->
-      
-     
+      <div class="heading1">
+        <h1>Contact Us</h1>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="contact-form"
+        >
+          <input type="text" name="name" placeholder="Your Name" required /><br>
+          <input type="email" name="email" placeholder="Your Email" required /><br>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea><br>
+          <input type="hidden" name="form-name" value="contact">
+          <button type="submit">Send</button>
+        </form>
+
+      </div>
+
     </main>
     <footer>
       <span id="footer-content"></span>
