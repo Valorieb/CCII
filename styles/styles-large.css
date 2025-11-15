@@ -1,4 +1,5 @@
 @media (min-width: 679px) {
+  
   nav {
     background-color: black;
     color: aliceblue;
@@ -53,29 +54,29 @@
   }
 
   .hero-container {
-    /* display:flex;
-  justify-content:center;
-  align-items:center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
+    background-color: transparent;
   }
 
   .hero {
-    width: 100%;
-    /* max-width: 1300px; */
+    width: auto;
+    height: 100%;
     object-fit: cover;
-    /* object-position: center; */
-    height: auto;
+    object-position: center;
     display: block;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     position: relative;
   }
 
   .overlay {
     position: absolute;
-    top: 80%;
-    left: 30%;
+    top: 50%;
+    left: 32%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
@@ -84,6 +85,46 @@
     z-index: 1;
     width: 240px;
     aspect-ratio: 1 / 1;
+  }
+
+  .join-btn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    top: 73%;
+    right: 60%;
+    font-size: 30px;
+    background-color: #479dff;
+    color: rgb(41, 41, 41);
+    aspect-ratio: 1 / 1;
+    border:none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+    animation: slowGlow 3s ease-in-out infinite alternate;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+  }
+
+  .join-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.8);
+    background-color: #5eb1f0;
+    color: #2b3a57;
+    border: #7c9eed 2px solid;
+  }
+
+  @keyframes slowGlow {
+    0% {
+      box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 6px 20px rgba(0, 150, 255, 0.7);
+    }
+    100% {
+      box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
+    }
   }
 
   .logo {
@@ -99,6 +140,11 @@
     height: 100px;
     padding: 10px;
     margin-left: auto;
+  }
+
+  .donate-btn:hover {
+    background-color: rgb(220, 76, 51);
+    color: #ffffff;
   }
 
   .header-stuff {

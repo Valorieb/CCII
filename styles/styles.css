@@ -32,9 +32,10 @@ body {
 
 main {
   max-width: 1300px;
+  height: 70vh;
   margin: 0 auto;
   text-align: center;
- background-color: aliceblue;
+ background-color: transparent;
   /* padding: 20px; */
 }
 
@@ -217,3 +218,4 @@ header {
   box-shadow: 0 0 12px rgba(110, 161, 196, 0.7); 
   transform: scale(1.05);
 }
+
