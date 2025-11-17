@@ -1,4 +1,4 @@
-@media (min-width: 679px) {
+@media (min-width: 900px) {
   
   nav {
     background-color: black;
@@ -87,6 +87,15 @@
     aspect-ratio: 1 / 1;
   }
 
+    .overlay h1{
+    font-size: 2em;
+  }
+
+    .overlay .extra-text {
+    display: block;
+
+  }
+
   .join-btn {
     position: absolute;
     width: 100px;
@@ -107,25 +116,7 @@
     font-weight: bold;
   }
 
-  .join-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.8);
-    background-color: #5eb1f0;
-    color: #2b3a57;
-    border: #7c9eed 2px solid;
-  }
-
-  @keyframes slowGlow {
-    0% {
-      box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
-    }
-    50% {
-      box-shadow: 0 6px 20px rgba(0, 150, 255, 0.7);
-    }
-    100% {
-      box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
-    }
-  }
+ 
 
   .logo {
     margin: 20px;
@@ -145,6 +136,7 @@
   .donate-btn:hover {
     background-color: rgb(220, 76, 51);
     color: #ffffff;
+    transform: scale(1.05);
   }
 
   .header-stuff {
@@ -204,7 +196,7 @@
 
   .active:hover {
     box-shadow: 0 0 12px rgba(110, 161, 196, 0.7);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
   }
 
   nav ul a {

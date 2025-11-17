@@ -1,42 +1,43 @@
-main {
+@media(min-width: 900px){
+    main {
   padding: 10px;
   height: auto;
   background-color: aliceblue;
-  max-width: 900px;
+  width: 900px;
 }
 
 .events {
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .events li {
+  margin: 10px;
   border: 1px rgb(183, 182, 182) solid;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
+  width: 300px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  min-height: 250px;
 }
 
 .event-btn-container{
-    flex-direction: column;
+    display:flex;
     justify-content: center;
+     flex-direction: row;
 }
 
 .event-btn {
-  display: block;
+  display: inline-block;
   background-color: rgb(188, 230, 230);
   padding: 20px;
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 10px auto;
+  margin: 10px;
   color: black;
   border: solid rgb(167, 181, 188) 1px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -46,4 +47,6 @@ main {
 .event-btn:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
+}
+
 }

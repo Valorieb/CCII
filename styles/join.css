@@ -1,0 +1,14 @@
+main {
+  height: auto;
+  color: aliceblue;
+  max-width: 900px;
+  padding: 10px;
+}
+
+iframe {
+  background-color: rgba(136, 161, 182, 0.683);
+  border-radius: 10px;
+  max-width: 640px;
+  width: 100%;
+  height: 3700px;
+}

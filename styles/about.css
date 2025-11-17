@@ -1,10 +1,8 @@
-/* body {
-    background-color: #2b3a57;
-} */
 main {
   padding-top: 10px;
   background-color: #2b3a57;
-  width: 900px;
+  max-width: 900px;
+  height: auto;
 }
 
 h1 {
@@ -12,7 +10,7 @@ h1 {
 }
 
 .main-container {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   height: auto;
   display: block;
@@ -23,33 +21,40 @@ h1 {
   padding: 10px;
 }
 .about {
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
+  display: block;
+  padding-right: 0px;
   background-color: #62718b;
   color: aliceblue;
 }
+.about p {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
 .about img {
-  padding-right: 10px;
+  padding: 0px;
 }
 
 .believe {
-  display: flex;
-  align-items: center;
-  background-color:aliceblue ;
+  display: block;
+  background-color: aliceblue;
   color: #212a3a;
 }
 
 .believe p {
-  padding-left: 10px;
+  display: block;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .believe img {
-  padding-left: 10px;
+  padding: 0px;
   margin: 0;
 }
-.value p{
-    color:aliceblue;
-    padding: 10px;
+.value p {
+  color: aliceblue;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
-
