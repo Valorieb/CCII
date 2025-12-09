@@ -2,9 +2,9 @@ html {
   font-family: "Sansation", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: radial-gradient(circle, #6ea1c4, #1a1d25);
-   overflow-x: hidden;
- 
+  background-color: #6ea1c4;
+  overflow-x: hidden;
+
   margin: 0;
 }
 
@@ -35,7 +35,7 @@ main {
   height: 70vh;
   margin: 0 auto;
   text-align: center;
- background-color: transparent;
+  background-color: transparent;
   /* padding: 20px; */
 }
 
@@ -61,8 +61,6 @@ nav ul {
   margin: 0;
 }
 
-
-
 ul.menuLinks {
   display: none;
   position: fixed;
@@ -86,27 +84,24 @@ ul.menuLinks.open {
   opacity: 1;
   transform: translateY(0);
   transform: translateX(0);
-  
 }
-ul a{
-  color:#000000
-}
-
-ul a:visited{
-  color:#000000
+ul a {
+  color: #000000;
 }
 
+ul a:visited {
+  color: #000000;
+}
 
 ul.menuLinks li {
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 4px;
- color:#000000
+  color: #000000;
 }
 
 ul.menuLinks li:hover {
   background-color: #f0f0f0;
-    
 }
 
 #myButton {
@@ -208,94 +203,93 @@ header {
 }
 
 .active {
-  border:#6ea1c4 solid 2px;
+  border: #6ea1c4 solid 2px;
   background-color: #c4cadb;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(110, 161, 196, 0.5);
 }
 
 .active:hover {
-  box-shadow: 0 0 12px rgba(110, 161, 196, 0.7); 
+  box-shadow: 0 0 12px rgba(110, 161, 196, 0.7);
   transform: scale(1.05);
 }
 
-  .hero-container {
+.hero-container {
   background-color: transparent;
   position: relative;
-  max-width: 1300px
-  }
+  max-width: 1300px;
+}
 
-  .hero {
-    width: auto;
-    height: 70vh;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-  }
+.hero {
+  width: auto;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
 
-  .overlay h1{
-    font-size: large;
-  }
+.overlay h1 {
+  font-size: large;
+}
 
-    .overlay {
-    position: absolute;
-    top: 45%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 50%;
-    text-align: center;
-    z-index: 1;
-    width: 120px;
-    aspect-ratio: 1 / 1;
-    font-size:small;
-  }
+.overlay {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  width: 120px;
+  aspect-ratio: 1 / 1;
+  font-size: small;
+}
 
-   .overlay .extra-text {
-    display: none;
-  }
+.overlay .extra-text {
+  display: none;
+}
 
-  .join-btn {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    border-radius: 50%;
-    top: 65%;
-    left: 52%;
-    font-size: 16px;
-    background-color: #479dff;
-    color: rgb(41, 41, 41);
-    aspect-ratio: 1 / 1;
-    border:none;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
-    animation: slowGlow 3s ease-in-out infinite alternate;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-weight: bold;
-    transform: translate(-50%, -50%) scale(1);
-  }
+.join-btn {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  top: 65%;
+  left: 52%;
+  font-size: 16px;
+  background-color: #479dff;
+  color: rgb(41, 41, 41);
+  aspect-ratio: 1 / 1;
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+  animation: slowGlow 3s ease-in-out infinite alternate;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  transform: translate(-50%, -50%) scale(1);
+}
 
-  .join-btn:hover {
-   transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.8);
-    background-color: #5eb1f0;
-    color: #2b3a57;
-    border: #7c9eed 2px solid;
-  }
+.join-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 150, 255, 0.8);
+  background-color: #5eb1f0;
+  color: #2b3a57;
+  border: #7c9eed 2px solid;
+}
 
-   @keyframes slowGlow {
-    0% {
-      box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
-    }
-    50% {
-      box-shadow: 0 6px 20px rgba(0, 150, 255, 0.7);
-    }
-    100% {
-      box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
-    }
+@keyframes slowGlow {
+  0% {
+    box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
   }
-
+  50% {
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
+  }
+}
