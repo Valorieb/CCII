@@ -14,10 +14,10 @@ logoPic.setAttribute("class", "logo-pic");
 logoImg.setAttribute("class", "logo");
 logoImg.setAttribute("src", "images/ccii-logo-small.webp");
 logoImg.setAttribute("alt", "CCII logo");
-logoImg.setAttribute("height", "50 px");
+// logoImg.setAttribute("height", "30px");
 
-logoLarge.setAttribute("class", "logo");
-logoLarge.setAttribute("srcset", "images/ccii-logo-long.webp");
+
+logoLarge.setAttribute("srcset", "images/ccii-svg-logo-long-vect1.svg");
 logoLarge.setAttribute("media", "(min-width: 619px)");
 
 logo.appendChild(logoPic);
@@ -45,6 +45,11 @@ const iconArray = [
     href: "https://www.instagram.com/ccilindivisible/",
     src: "images/icons8-instagram-50.svg",
     alt: "Instagram icon",
+  },
+  {
+    href: "https://www.threads.com/@ccilindivisible",
+    src: "images/threads.png",
+    alt: "Threads icon",
   },
 ];
 
