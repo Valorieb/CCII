@@ -80,8 +80,9 @@
           <p class="red-text">* Indicates required question</p>
         </div>
 
-        <form name="join" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanksjoin.html">
+        <form name="join" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="join">
+          <input type="hidden" name="redirect" value="/thanksjoin.html">
           <div class="join-section">
             <label for="first-name">First Name *️</label><br />
             <input
